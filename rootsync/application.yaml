@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: example-cluster-name
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: http://172.18.0.200:3000/nephio/example-cluster-name.git
+    targetRevision: HEAD
+    path: /
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd

@@ -1,0 +1,17 @@
+apiVersion: config.porch.kpt.dev/v1alpha2
+kind: PackageVariantSet
+metadata:
+  name: free5g-smf-regional
+spec:
+  upstream:
+    repo: free5gc-packages
+    package: pkg-example-smf-bp
+    revision: v1
+  targets:
+  - repositorySelector:
+      matchExpressions:
+      - key: nephio.org/site-type
+        operator: In
+        values:
+        - regional
+        - combined
