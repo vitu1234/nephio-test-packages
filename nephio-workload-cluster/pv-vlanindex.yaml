@@ -8,7 +8,7 @@ spec:
   upstream:
     package: vlanindex
     repo: nephio-test-packages
-    revision: v1
+    revision: v0.1
   downstream:
     package: example-vlanindex
     repo: mgmt

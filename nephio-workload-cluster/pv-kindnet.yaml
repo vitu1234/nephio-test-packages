@@ -8,7 +8,7 @@ spec:
   upstream:
     package: kindnet
     repo: nephio-test-packages
-    revision: v1
+    revision: v0.1
   downstream:
     package: example-kindnet
     repo: mgmt-staging

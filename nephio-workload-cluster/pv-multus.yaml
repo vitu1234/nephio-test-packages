@@ -8,7 +8,7 @@ spec:
   upstream:
     package: multus
     repo: nephio-test-packages
-    revision: v1
+    revision: v0.1
   downstream:
     package: example-multus
     repo: mgmt-staging

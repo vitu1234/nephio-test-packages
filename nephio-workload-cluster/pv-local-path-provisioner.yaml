@@ -8,7 +8,7 @@ spec:
   upstream:
     package: local-path-provisioner
     repo: nephio-test-packages
-    revision: v1
+    revision: v0.1
   downstream:
     package: example-local-path-provisioner
     repo: mgmt-staging
