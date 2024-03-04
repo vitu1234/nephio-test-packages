@@ -1,20 +1,17 @@
 apiVersion: config.porch.kpt.dev/v1alpha1
 kind: PackageVariant
 metadata:
-  name: example-rootsync
+  name: example-argocd-deployment
 spec:
   annotations:
     approval.nephio.org/policy: initial
   upstream:
-    package: rootsync
+    package: argocd-deployment
     repo: nephio-test-packages
     revision: v0.1
   downstream:
-    package: example-rootsync
+    package: example-argocd-deployment
     repo: mgmt-staging
-  injectors:
-  - kind: WorkloadCluster
-    name: example
   pipeline:
     mutators:
     - image: gcr.io/kpt-fn/set-annotations:v0.1.4

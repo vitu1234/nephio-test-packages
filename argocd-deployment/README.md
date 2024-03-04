@@ -1,4 +1,4 @@
-# argocd-deploy
+# argocd-deployment
 
 ## Description
 sample description
@@ -6,16 +6,16 @@ sample description
 ## Usage
 
 ### Fetch the package
-`kpt pkg get REPO_URI[.git]/PKG_PATH[@VERSION] argocd-deploy`
+`kpt pkg get REPO_URI[.git]/PKG_PATH[@VERSION] argocd-deployment`
 Details: https://kpt.dev/reference/cli/pkg/get/
 
 ### View package content
-`kpt pkg tree argocd-deploy`
+`kpt pkg tree argocd-deployment`
 Details: https://kpt.dev/reference/cli/pkg/tree/
 
 ### Apply the package
 ```
-kpt live init argocd-deploy
-kpt live apply argocd-deploy --reconcile-timeout=2m --output=table
+kpt live init argocd-deployment
+kpt live apply argocd-deployment --reconcile-timeout=2m --output=table
 ```
 Details: https://kpt.dev/reference/cli/live/
